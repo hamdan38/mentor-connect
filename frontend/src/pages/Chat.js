@@ -17,7 +17,7 @@ export default function ChatPage(){
   useEffect(()=>{
     getContacts().then(r=>setContacts(r.data)).catch(()=>{});
     try{
-      sockRef.current=io('http://localhost:5000',{transports:['websocket'],timeout:3000});
+      sockRef.current=io('https://mentor-connect-ja3w.onrender.com',{transports:['websocket'],timeout:3000});
       sockRef.current.emit('user_online',user._id);
       sockRef.current.on('online_users',u=>setOnline(u));
       sockRef.current.on('receive_message',d=>{
