@@ -3,7 +3,7 @@ import { useAuth } from '../../context/AuthContext';
 import { API } from '../../context/AuthContext';
 
 export default function AdminDashboard() {
-  const { user, logout } = useAuth();
+  const { logout } = useAuth();
   const [pending, setPending] = useState([]);
   const [approved, setApproved] = useState([]);
   const [busy, setBusy] = useState(true);
