@@ -15,7 +15,8 @@ const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:3001',
   'http://127.0.0.1:3000',
-  'http://127.0.0.1:3001'
+  'http://127.0.0.1:3001',
+  'https://mentor-connect-h85a-cwi5zk2ce-hamdanmd0786-9526s-projects.vercel.app'
 ];
 
 const corsOptions = {
