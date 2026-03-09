@@ -306,3 +306,5 @@ lsof -ti:5000 | xargs kill -9
 **Socket.io not connecting:**
 - Ensure backend is running before starting frontend
 - Check browser console for WebSocket errors
+-------------VISIT HERE FOR PREVIEW---------------
+  https://mentor-connect38.vercel.app/
